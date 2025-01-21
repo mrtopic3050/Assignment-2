@@ -154,6 +154,7 @@
 
 }
 
+
 .navbar i {
     width: 30px;
     height: 30px;
@@ -231,6 +232,7 @@ header .header-hr {
 .navbar-btn:hover {
     background-color: rgb(1, 172, 253);
     color: black;
+    cursor: pointer;
 }
 
 .hero-btn:hover {
@@ -344,6 +346,11 @@ header .header-hr {
 
 }
 
+.hero-2-container .card-read:hover {
+    color: black;
+    cursor: pointer;
+}
+
 .hero-2 .hero-2-nav-icon {
     width: 60px;
     height: 60px;
@@ -441,6 +448,7 @@ header .header-hr {
 
 .story-date-main,
 .story-date {
+    position: relative;
     width: 140px;
     height: 27px;
     border-radius: 50px;
@@ -455,6 +463,8 @@ header .header-hr {
     align-items: center;
     text-align: center;
     padding-top: 2px;
+    margin-top: -18px;
+    margin-left: 10px;
 
 }
 
@@ -487,6 +497,83 @@ header .header-hr {
     line-height: 30px;
     letter-spacing: 0%;
     text-align: center;
+}
+.view-all-story:hover{
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+
+/* footer styles */
+
+footer {
+    background: rgb(1, 172, 253);
+    width: 100%;
+    height: 519px;
+    color: white;
+}
+
+.footer-element-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 122px;
+}
+
+.kid-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 299px;
+    height: 81px;
+}
+
+.kid-header img {
+    background-color: white;
+    width: 82.9px;
+    height: 81.65px;
+
+}
+
+.kid-header h3 {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 42.14px;
+    font-weight: 700;
+    line-height: 39.51px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.kid-element {
+    width: 399.02px;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 35px;
+
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.footer-nav a:hover{
+    color: black;
 }
 
 
