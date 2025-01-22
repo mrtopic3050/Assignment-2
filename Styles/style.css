@@ -161,7 +161,8 @@
     display: none;
 }
 
-header .header-hr {
+header hr {
+    position: absolute;
     border: 0.5px solid rgb(254, 163, 1);
     display: none;
 
@@ -483,6 +484,10 @@ header .header-hr {
     gap: 20px;
 }
 
+.story-card-secondary-5, .story-card-secondary-6{
+    display: none;
+}
+
 .view-all-story {
     width: 197px;
     height: 50px;
@@ -498,7 +503,8 @@ header .header-hr {
     letter-spacing: 0%;
     text-align: center;
 }
-.view-all-story:hover{
+
+.view-all-story:hover {
     background-color: whitesmoke;
     color: black;
     cursor: pointer;
@@ -559,26 +565,27 @@ footer {
 
 }
 
-.footer-nav{
+.footer-nav {
     display: flex;
     flex-direction: column;
     gap: 20px;
 
 }
 
-.footer-nav a{
+.footer-nav a {
     text-decoration: none;
     color: white;
 
 }
 
-.footer-nav a:hover{
+.footer-nav a:hover {
     color: black;
 }
 
 
 
 
+/* hr style */
 
 
 
@@ -589,4 +596,208 @@ footer {
 
 /* Small Devices */
 
-@media screen and (max-width: 576px) {}
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+
+    body {
+        width: 390px;
+    }
+
+    .navbar-head,
+    .navbar-link-container,
+    .navbar-btn-container {
+        display: none;
+    }
+
+    header hr {
+
+        border: 0.5px solid rgb(254, 163, 1);
+        display: inline;
+
+
+    }
+
+    .navbar-container {
+        width: 390px;
+        height: 62px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .navbar i {
+        display: inline;
+    }
+
+    /* hero */
+    .hero-content {
+        width: 357px;
+        height: 725px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .kid-img {
+        width: 336.58px;
+        height: 413px;
+        text-align: center;
+    }
+
+    .hero-head {
+        width: 357px;
+        height: 120px;
+        font-family: Quicksand;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        text-align: center;
+        margin: 18px 50px;
+
+    }
+
+    .hero {
+        width: 390px;
+        height: 575px;
+    }
+
+    .hero-element {
+        width: 390px;
+        height: 331px;
+        align-items: center;
+    }
+
+    .hero-subtitle {
+        width: 357px;
+        height: 54px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin: 18px 50px;
+
+    }
+
+    .hero-btn {
+        width: 131px;
+        height: 42px;
+        border-radius: 8px;
+        font-size: 16px;
+        padding-bottom: 35px;
+        margin-top: 18px;
+        margin-left: 70px;
+
+    }
+
+    /* standard curriculum */
+
+    .hero-2-head {
+        width: 261px;
+        height: 33px;
+        font-size: 26px;
+    }
+
+    .hero-2-container {
+        width: 357px;
+        height: 991px;
+        flex-direction: column;
+
+    }
+
+    .card-container {
+        width: 357px;
+        height: 321.28px;
+    }
+
+    .hero-2-container .card-img {
+        width: 88px;
+        height: 75px;
+        margin: 20px 134px;
+    }
+
+    .hero-2-container .card-title {
+        font-size: 16px;
+        margin-top: 18px;
+        margin-bottom: 18px;
+
+
+    }
+
+    .hero-2-container .card-subtitle {
+        width: 193px;
+        height: 50px;
+        font-size: 10px;
+    }
+
+    .hero-2-container .card-read {
+        text-decoration: none;
+        width: 53.93px;
+        height: 12.77px;
+        font-size: 10px;
+
+
+    }
+
+    /* our stories */
+
+    .story-card-main {
+        display: none;
+    }
+
+    .story-card-container {
+        width: 358px;
+        height: 561px;
+    }
+
+    .story-card-secondary {
+        width: 173.09px;
+        height: 179.59px;
+        border-radius: 9.53px;
+    }
+
+    .story-card-secondary-img {
+        width: 173px;
+        height: 105px;
+    }
+
+    .story-head-secondary {
+        width: 117.92px;
+        height: 28.54px;
+        font-size: 9px;
+        line-height: 17px;
+    }
+
+    .story-date {
+        width: 103px;
+        height: 22px;
+        border-radius: 28.54px;
+        background: rgb(149, 178, 38);
+        font-size: 9.13px;
+        line-height: 17.12px;
+    }
+    .story-card-secondary-container{
+        align-content: center;
+    }
+
+
+    .story-card-secondary-5, .story-card-secondary-6{
+        display: inline;
+        background: rgb(255, 255, 255);
+        width: 173.09px;
+        height: 179.59px;
+        border-radius: 9.53px;
+    }
+
+    .view-all-story {
+        position: relative;
+        margin-top: -200px;
+    }
+
+
+}
