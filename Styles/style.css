@@ -31,6 +31,12 @@
     color: rgb(175, 8, 175);
 }
 
+/* marquee tag */
+marquee{
+    margin-top: 10px;
+    color: blue;
+}
+
 /* Hero-2 Shared styles */
 
 .blue-gradient {
@@ -813,7 +819,7 @@ footer {
 
     .navbar-img {
         width: 58px;
-        height: 69px;
+        height: 58px;
     }
 
     .kid-header {
@@ -860,6 +866,11 @@ footer {
         position: relative;
         margin-top: -100px;
         margin-left: -180px;
+    }
+
+    marquee{
+        position: relative;
+        margin-top: 150px;
     }
 
 
