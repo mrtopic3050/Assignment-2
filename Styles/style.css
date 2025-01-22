@@ -161,7 +161,8 @@
     display: none;
 }
 
-header .header-hr {
+header hr {
+    position: absolute;
     border: 0.5px solid rgb(254, 163, 1);
     display: none;
 
@@ -498,7 +499,8 @@ header .header-hr {
     letter-spacing: 0%;
     text-align: center;
 }
-.view-all-story:hover{
+
+.view-all-story:hover {
     background-color: whitesmoke;
     color: black;
     cursor: pointer;
@@ -559,26 +561,27 @@ footer {
 
 }
 
-.footer-nav{
+.footer-nav {
     display: flex;
     flex-direction: column;
     gap: 20px;
 
 }
 
-.footer-nav a{
+.footer-nav a {
     text-decoration: none;
     color: white;
 
 }
 
-.footer-nav a:hover{
+.footer-nav a:hover {
     color: black;
 }
 
 
 
 
+/* hr style */
 
 
 
@@ -589,4 +592,56 @@ footer {
 
 /* Small Devices */
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+
+    body {
+        width: 390px;
+    }
+
+    .navbar-head,
+    .navbar-link-container,
+    .navbar-btn-container {
+        display: none;
+    }
+
+    header hr {
+
+        border: 0.5px solid rgb(254, 163, 1);
+        display: inline;
+
+
+    }
+
+    .navbar i {
+        display: inline;
+    }
+
+    .hero-content {
+        width: 357px;
+        height: 725px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .kid-img {
+        width: 336.58px;
+        height: 413px;
+        text-align: center;
+    }
+
+    .hero-head {
+        width: 357px;
+        height: 120px;
+        font-family: Quicksand;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        text-align: center;
+        
+    }
+
+
+
+}
