@@ -162,7 +162,7 @@
 }
 
 header hr {
-    position: absolute;
+    position: relative;
     border: 0.5px solid rgb(254, 163, 1);
     display: none;
 
@@ -484,7 +484,8 @@ header hr {
     gap: 20px;
 }
 
-.story-card-secondary-5, .story-card-secondary-6{
+.story-card-secondary-5,
+.story-card-secondary-6 {
     display: none;
 }
 
@@ -781,12 +782,16 @@ footer {
         font-size: 9.13px;
         line-height: 17.12px;
     }
-    .story-card-secondary-container{
+
+    .story-card-secondary-container {
         align-content: center;
+        width: 358px;
+        height: 561px;
     }
 
 
-    .story-card-secondary-5, .story-card-secondary-6{
+    .story-card-secondary-5,
+    .story-card-secondary-6 {
         display: inline;
         background: rgb(255, 255, 255);
         width: 173.09px;
@@ -796,7 +801,65 @@ footer {
 
     .view-all-story {
         position: relative;
-        margin-top: -200px;
+
+    }
+
+    .footer-element-container {
+        width: 390px;
+        height: 642px;
+        flex-direction: column;
+
+    }
+
+    .navbar-img {
+        width: 58px;
+        height: 69px;
+    }
+
+    .kid-header {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        width: 299px;
+        height: 81px;
+        margin-top: -120px;
+    }
+
+    .kid-header img {
+        width: 69px;
+        height: 69px;
+
+    }
+
+    .kid-header h3 {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 39.51px;
+    }
+
+    .kid-element {
+        width: 357px;
+        height: 80px;
+        font-size: 16px;
+
+    }
+
+    footer {
+        background: rgb(1, 172, 253);
+        width: 100%;
+        height: 800px;
+    }
+    .footer-nav {
+        position: relative;
+        margin-top: -50px;
+        margin-left: -250px;
+    
+    }
+
+    .footer-links{
+        position: relative;
+        margin-top: -100px;
+        margin-left: -180px;
     }
 
 
